@@ -68,7 +68,7 @@ Use the Huffman encoding algorithm to compress and decompress text data. The imp
 
 ## Contributors
 
-- [Your Name]
+- Abdullah Nazari
 
 ## License
 
