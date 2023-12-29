@@ -1,0 +1,5 @@
+C:/Users/Owner/Desktop/DSA/personal-git-repo-AboNazari/pain2/tests/cmake-build-debug/CMakeFiles/UnoTests.dir
+C:/Users/Owner/Desktop/DSA/personal-git-repo-AboNazari/pain2/tests/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Owner/Desktop/DSA/personal-git-repo-AboNazari/pain2/tests/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Owner/Desktop/DSA/personal-git-repo-AboNazari/pain2/tests/cmake-build-debug/_deps/catch2-build/CMakeFiles/edit_cache.dir
+C:/Users/Owner/Desktop/DSA/personal-git-repo-AboNazari/pain2/tests/cmake-build-debug/_deps/catch2-build/CMakeFiles/rebuild_cache.dir

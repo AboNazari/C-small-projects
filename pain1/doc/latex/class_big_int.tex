@@ -1,0 +1,777 @@
+\doxysection{Big\+Int Class Reference}
+\hypertarget{class_big_int}{}\label{class_big_int}\index{BigInt@{BigInt}}
+
+
+A class to represent large integers (beyond built-\/in data types range).  
+
+
+
+
+{\ttfamily \#include $<$Big\+Int.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_big_int_af677021c0987fc2a48da06837ed29c58}{Big\+Int}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor that initializes the \doxylink{class_big_int}{Big\+Int} to zero. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int_a895cbf21aa0e188a227d66720a8d5641}{Big\+Int}} (int num)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the \doxylink{class_big_int}{Big\+Int} with an integer value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int_a24bdbef20b79defb4ba5135288d9beb3}{Big\+Int}} (const std\+::string \&num)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the \doxylink{class_big_int}{Big\+Int} with a string representation of an integer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int_a35bd468d1f1b248fa8601e98d9e28095}{Big\+Int}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int_af2b75b5300d0ca436be29c8d06770f09}{Big\+Int}} (\mbox{\hyperlink{class_big_int}{Big\+Int}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int_a2a8ffad37329b0a3649b88180406d12c}{\texorpdfstring{$\sim$}{\string~}\+Big\+Int}} ()
+\begin{DoxyCompactList}\small\item\em Destructor to clean up resources, if any. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_acf92dcbd39a0698cb36bf2cf65fefa7e}{operator=}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_a53cf0041b3c7f548ccaa22dd63b08096}{operator=}} (\mbox{\hyperlink{class_big_int}{Big\+Int}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em Move assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_a6071d9f0c43fb7f2e6a3117efc09115f}{operator+}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Addition operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_a4aa308120228123a74ba25bdae49229c}{operator-\/}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Subtraction operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_a4455c26327c588c22a8081b846071197}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Multiplication operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_a8ebe29657fbeb45055ec5855f738d266}{operator+=}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other)
+\begin{DoxyCompactList}\small\item\em Addition assignment operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_a7117f819c1a5e3767493eebb3e37c6e8}{operator-\/=}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other)
+\begin{DoxyCompactList}\small\item\em Subtraction assignment operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_ab866eb5a4f332d75e48a5bbdf7aac034}{operator\texorpdfstring{$\ast$}{*}=}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other)
+\begin{DoxyCompactList}\small\item\em Multiplication assignment operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_a67497b954913cf21bd6c4ee5ae8ccca0}{operator/}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Division operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_afa121f5f5c9712ff1201921f23c569e3}{operator\%}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Remainder operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_a00dadb3ac1250162b42c16d818d3962d}{operator/=}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other)
+\begin{DoxyCompactList}\small\item\em Division assignment operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_aa63442ee8a9c67f56f9a48180716a113}{operator\%=}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other)
+\begin{DoxyCompactList}\small\item\em Remainder assignment operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_a34c8cba8f37b03e6973398585f7f8927}{operator+}} () const
+\begin{DoxyCompactList}\small\item\em Unary plus operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_a4a4ded170439fee88f133d0202b5c182}{operator-\/}} () const
+\begin{DoxyCompactList}\small\item\em Unary minus operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_a0f1a8a43867f25c8df48e7747012536f}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Prefix increment operator. Increments the current \doxylink{class_big_int}{Big\+Int} by one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_a7120696c07c413340246a61eb209a541}{operator++}} (int)
+\begin{DoxyCompactList}\small\item\em Postfix increment operator. Increments the current \doxylink{class_big_int}{Big\+Int} by one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_aed992537fac59f8c794fc24d10baf199}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em Prefix decrement operator. Decrements the current \doxylink{class_big_int}{Big\+Int} by one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_a6ef5639e9f2cb2226f8611bb39c6c663}{operator-\/-\/}} (int)
+\begin{DoxyCompactList}\small\item\em Postfix decrement operator. Decrements the current \doxylink{class_big_int}{Big\+Int} by one. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_big_int_a447352f19f8d848240cd7c5d8b1e6163}{operator==}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_big_int_ae5fd94dc6cd44b337183789be433d190}{operator!=}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Not equal operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_big_int_aced57af79c96173be8d7096350c97455}{operator$<$}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Less than operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_big_int_ae9f535c6a955523588989f27600d03b0}{operator$<$=}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Less than or equal operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_big_int_a116296fb48c7e16074f276854a83c688}{operator$>$}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Greater than operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_big_int_a60417149c24b2d97ab4b34174975a276}{operator$>$=}} (const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&other) const
+\begin{DoxyCompactList}\small\item\em Greater than or equal operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_ae25f133fef2221043dcc067e16b7aa01}{operator/}} (int other) const
+\begin{DoxyCompactList}\small\item\em Division operator for \doxylink{class_big_int}{Big\+Int} with integer divisor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_a80996184003d1b1b31d9139379c8f714}{operator/=}} (int other)
+\begin{DoxyCompactList}\small\item\em Division assignment operator for \doxylink{class_big_int}{Big\+Int} with integer divisor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_a03da106058c3918c110ec82d1fce4335}{operator\%}} (int other) const
+\begin{DoxyCompactList}\small\item\em Remainder operator for \doxylink{class_big_int}{Big\+Int} with integer divisor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \& \mbox{\hyperlink{class_big_int_aaa99f4ddd2795bc5a59d39f5f9b37bf3}{operator\%=}} (int other)
+\begin{DoxyCompactList}\small\item\em Remainder assignment operator for \doxylink{class_big_int}{Big\+Int} with integer divisor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_big_int}{Big\+Int}} \mbox{\hyperlink{class_big_int_aa34ecda03510403923d8d3a9ea028a52}{pow}} (int exponent) const
+\begin{DoxyCompactList}\small\item\em Calculates the \doxylink{class_big_int}{Big\+Int} raised to the power of an integer exponent. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_big_int_aff71eef13bdf853d18b04d1422e9d754}{to\+String}} () const
+\begin{DoxyCompactList}\small\item\em Converts \doxylink{class_big_int}{Big\+Int} to string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_big_int_a20466e28e0aa2656d6aa2a85ee5efc6e}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&b)
+\begin{DoxyCompactList}\small\item\em Overloads the output stream operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{class_big_int_a9f4a41d25e530468354b3057e97ddb40}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_big_int}{Big\+Int}} \&b)
+\begin{DoxyCompactList}\small\item\em Overloads the input stream operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to represent large integers (beyond built-\/in data types range). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_big_int_af677021c0987fc2a48da06837ed29c58}\label{class_big_int_af677021c0987fc2a48da06837ed29c58} 
+\index{BigInt@{BigInt}!BigInt@{BigInt}}
+\index{BigInt@{BigInt}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{BigInt()}{BigInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Big\+Int\+::\+Big\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor that initializes the \doxylink{class_big_int}{Big\+Int} to zero. 
+
+Default constructor initializing \doxylink{class_big_int}{Big\+Int} to zero. \Hypertarget{class_big_int_a895cbf21aa0e188a227d66720a8d5641}\label{class_big_int_a895cbf21aa0e188a227d66720a8d5641} 
+\index{BigInt@{BigInt}!BigInt@{BigInt}}
+\index{BigInt@{BigInt}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{BigInt()}{BigInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Big\+Int\+::\+Big\+Int (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the \doxylink{class_big_int}{Big\+Int} with an integer value. 
+
+Integer constructor initializing \doxylink{class_big_int}{Big\+Int} with an integer value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & An integer to initialize the \doxylink{class_big_int}{Big\+Int} with.\\
+\hline
+{\em num} & Integer value to initialize \doxylink{class_big_int}{Big\+Int}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_big_int_a24bdbef20b79defb4ba5135288d9beb3}\label{class_big_int_a24bdbef20b79defb4ba5135288d9beb3} 
+\index{BigInt@{BigInt}!BigInt@{BigInt}}
+\index{BigInt@{BigInt}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{BigInt()}{BigInt()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Big\+Int\+::\+Big\+Int (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{num }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the \doxylink{class_big_int}{Big\+Int} with a string representation of an integer. 
+
+String constructor initializing \doxylink{class_big_int}{Big\+Int} from a string representation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & A string representation of an integer. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If the string is not a valid representation of an integer.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em num} & String representation of an integer. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If the string is not a valid integer representation. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_big_int_a35bd468d1f1b248fa8601e98d9e28095}\label{class_big_int_a35bd468d1f1b248fa8601e98d9e28095} 
+\index{BigInt@{BigInt}!BigInt@{BigInt}}
+\index{BigInt@{BigInt}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{BigInt()}{BigInt()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Big\+Int\+::\+Big\+Int (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A \doxylink{class_big_int}{Big\+Int} instance to copy the value from.\\
+\hline
+{\em other} & \doxylink{class_big_int}{Big\+Int} instance to copy. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_big_int_af2b75b5300d0ca436be29c8d06770f09}\label{class_big_int_af2b75b5300d0ca436be29c8d06770f09} 
+\index{BigInt@{BigInt}!BigInt@{BigInt}}
+\index{BigInt@{BigInt}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{BigInt()}{BigInt()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Big\+Int\+::\+Big\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_big_int}{Big\+Int}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A \doxylink{class_big_int}{Big\+Int} instance to move the value from.\\
+\hline
+{\em other} & \doxylink{class_big_int}{Big\+Int} instance to move from. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_big_int_a2a8ffad37329b0a3649b88180406d12c}\label{class_big_int_a2a8ffad37329b0a3649b88180406d12c} 
+\index{BigInt@{BigInt}!````~BigInt@{\texorpdfstring{$\sim$}{\string~}BigInt}}
+\index{````~BigInt@{\texorpdfstring{$\sim$}{\string~}BigInt}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}BigInt()}{\string~BigInt()}}
+{\footnotesize\ttfamily Big\+Int\+::\texorpdfstring{$\sim$}{\string~}\+Big\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor to clean up resources, if any. 
+
+Destructor. No dynamic memory is allocated, so no cleanup is required. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_big_int_ae5fd94dc6cd44b337183789be433d190}\label{class_big_int_ae5fd94dc6cd44b337183789be433d190} 
+\index{BigInt@{BigInt}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Big\+Int\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Not equal operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the Big\+Ints are not equal, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_afa121f5f5c9712ff1201921f23c569e3}\label{class_big_int_afa121f5f5c9712ff1201921f23c569e3} 
+\index{BigInt@{BigInt}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator\%()}{operator\%()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator\% (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Remainder operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The remainder after division. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a03da106058c3918c110ec82d1fce4335}\label{class_big_int_a03da106058c3918c110ec82d1fce4335} 
+\index{BigInt@{BigInt}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator\%()}{operator\%()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator\% (\begin{DoxyParamCaption}\item[{int}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Remainder operator for \doxylink{class_big_int}{Big\+Int} with integer divisor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The integer to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The remainder after division. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_aa63442ee8a9c67f56f9a48180716a113}\label{class_big_int_aa63442ee8a9c67f56f9a48180716a113} 
+\index{BigInt@{BigInt}!operator\%=@{operator\%=}}
+\index{operator\%=@{operator\%=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator\%=()}{operator\%=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator\%= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Remainder assignment operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the current instance after calculating the remainder. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_aaa99f4ddd2795bc5a59d39f5f9b37bf3}\label{class_big_int_aaa99f4ddd2795bc5a59d39f5f9b37bf3} 
+\index{BigInt@{BigInt}!operator\%=@{operator\%=}}
+\index{operator\%=@{operator\%=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator\%=()}{operator\%=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator\%= (\begin{DoxyParamCaption}\item[{int}]{other }\end{DoxyParamCaption})}
+
+
+
+Remainder assignment operator for \doxylink{class_big_int}{Big\+Int} with integer divisor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The integer to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the current instance after calculating the remainder. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a4455c26327c588c22a8081b846071197}\label{class_big_int_a4455c26327c588c22a8081b846071197} 
+\index{BigInt@{BigInt}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Multiplication operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to multiply with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the multiplication. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_ab866eb5a4f332d75e48a5bbdf7aac034}\label{class_big_int_ab866eb5a4f332d75e48a5bbdf7aac034} 
+\index{BigInt@{BigInt}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}}
+\index{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Multiplication assignment operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to multiply with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the current instance after multiplication. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a34c8cba8f37b03e6973398585f7f8927}\label{class_big_int_a34c8cba8f37b03e6973398585f7f8927} 
+\index{BigInt@{BigInt}!operator+@{operator+}}
+\index{operator+@{operator+}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Unary plus operator for \doxylink{class_big_int}{Big\+Int}. 
+
+\begin{DoxyReturn}{Returns}
+The current instance. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a6071d9f0c43fb7f2e6a3117efc09115f}\label{class_big_int_a6071d9f0c43fb7f2e6a3117efc09115f} 
+\index{BigInt@{BigInt}!operator+@{operator+}}
+\index{operator+@{operator+}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Addition operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the addition. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a0f1a8a43867f25c8df48e7747012536f}\label{class_big_int_a0f1a8a43867f25c8df48e7747012536f} 
+\index{BigInt@{BigInt}!operator++@{operator++}}
+\index{operator++@{operator++}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prefix increment operator. Increments the current \doxylink{class_big_int}{Big\+Int} by one. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the current instance after incrementing. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a7120696c07c413340246a61eb209a541}\label{class_big_int_a7120696c07c413340246a61eb209a541} 
+\index{BigInt@{BigInt}!operator++@{operator++}}
+\index{operator++@{operator++}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Postfix increment operator. Increments the current \doxylink{class_big_int}{Big\+Int} by one. 
+
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_big_int}{Big\+Int} before incrementing. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a8ebe29657fbeb45055ec5855f738d266}\label{class_big_int_a8ebe29657fbeb45055ec5855f738d266} 
+\index{BigInt@{BigInt}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Addition assignment operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current instance after addition. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a4a4ded170439fee88f133d0202b5c182}\label{class_big_int_a4a4ded170439fee88f133d0202b5c182} 
+\index{BigInt@{BigInt}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Unary minus operator for \doxylink{class_big_int}{Big\+Int}. 
+
+\begin{DoxyReturn}{Returns}
+The negated \doxylink{class_big_int}{Big\+Int}. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a4aa308120228123a74ba25bdae49229c}\label{class_big_int_a4aa308120228123a74ba25bdae49229c} 
+\index{BigInt@{BigInt}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Subtraction operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the subtraction. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_aed992537fac59f8c794fc24d10baf199}\label{class_big_int_aed992537fac59f8c794fc24d10baf199} 
+\index{BigInt@{BigInt}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prefix decrement operator. Decrements the current \doxylink{class_big_int}{Big\+Int} by one. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the current instance after decrementing. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a6ef5639e9f2cb2226f8611bb39c6c663}\label{class_big_int_a6ef5639e9f2cb2226f8611bb39c6c663} 
+\index{BigInt@{BigInt}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Postfix decrement operator. Decrements the current \doxylink{class_big_int}{Big\+Int} by one. 
+
+\begin{DoxyReturn}{Returns}
+The \doxylink{class_big_int}{Big\+Int} before decrementing. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a7117f819c1a5e3767493eebb3e37c6e8}\label{class_big_int_a7117f819c1a5e3767493eebb3e37c6e8} 
+\index{BigInt@{BigInt}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Subtraction assignment operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current instance after subtraction. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a67497b954913cf21bd6c4ee5ae8ccca0}\label{class_big_int_a67497b954913cf21bd6c4ee5ae8ccca0} 
+\index{BigInt@{BigInt}!operator/@{operator/}}
+\index{operator/@{operator/}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Division operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the division. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_ae25f133fef2221043dcc067e16b7aa01}\label{class_big_int_ae25f133fef2221043dcc067e16b7aa01} 
+\index{BigInt@{BigInt}!operator/@{operator/}}
+\index{operator/@{operator/}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::operator/ (\begin{DoxyParamCaption}\item[{int}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Division operator for \doxylink{class_big_int}{Big\+Int} with integer divisor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The integer to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the division. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a00dadb3ac1250162b42c16d818d3962d}\label{class_big_int_a00dadb3ac1250162b42c16d818d3962d} 
+\index{BigInt@{BigInt}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Division assignment operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the current instance after division. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a80996184003d1b1b31d9139379c8f714}\label{class_big_int_a80996184003d1b1b31d9139379c8f714} 
+\index{BigInt@{BigInt}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator/= (\begin{DoxyParamCaption}\item[{int}]{other }\end{DoxyParamCaption})}
+
+
+
+Division assignment operator for \doxylink{class_big_int}{Big\+Int} with integer divisor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The integer to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the current instance after division. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_aced57af79c96173be8d7096350c97455}\label{class_big_int_aced57af79c96173be8d7096350c97455} 
+\index{BigInt@{BigInt}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Big\+Int\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Less than operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current \doxylink{class_big_int}{Big\+Int} is less than the other \doxylink{class_big_int}{Big\+Int}, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_ae9f535c6a955523588989f27600d03b0}\label{class_big_int_ae9f535c6a955523588989f27600d03b0} 
+\index{BigInt@{BigInt}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Big\+Int\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Less than or equal operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current \doxylink{class_big_int}{Big\+Int} is less than or equal to the other \doxylink{class_big_int}{Big\+Int}, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a53cf0041b3c7f548ccaa22dd63b08096}\label{class_big_int_a53cf0041b3c7f548ccaa22dd63b08096} 
+\index{BigInt@{BigInt}!operator=@{operator=}}
+\index{operator=@{operator=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_big_int}{Big\+Int}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A \doxylink{class_big_int}{Big\+Int} instance to move the value from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated \doxylink{class_big_int}{Big\+Int} instance.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{class_big_int}{Big\+Int} instance to move from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the current instance. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_acf92dcbd39a0698cb36bf2cf65fefa7e}\label{class_big_int_acf92dcbd39a0698cb36bf2cf65fefa7e} 
+\index{BigInt@{BigInt}!operator=@{operator=}}
+\index{operator=@{operator=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} \& Big\+Int\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A \doxylink{class_big_int}{Big\+Int} instance to copy the value from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated \doxylink{class_big_int}{Big\+Int} instance.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{class_big_int}{Big\+Int} instance to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the current instance. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a447352f19f8d848240cd7c5d8b1e6163}\label{class_big_int_a447352f19f8d848240cd7c5d8b1e6163} 
+\index{BigInt@{BigInt}!operator==@{operator==}}
+\index{operator==@{operator==}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Big\+Int\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Equality operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both Big\+Ints are equal, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a116296fb48c7e16074f276854a83c688}\label{class_big_int_a116296fb48c7e16074f276854a83c688} 
+\index{BigInt@{BigInt}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Big\+Int\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Greater than operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current \doxylink{class_big_int}{Big\+Int} is greater than the other \doxylink{class_big_int}{Big\+Int}, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a60417149c24b2d97ab4b34174975a276}\label{class_big_int_a60417149c24b2d97ab4b34174975a276} 
+\index{BigInt@{BigInt}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Big\+Int\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Greater than or equal operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_big_int}{Big\+Int} to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current \doxylink{class_big_int}{Big\+Int} is greater than or equal to the other \doxylink{class_big_int}{Big\+Int}, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_aa34ecda03510403923d8d3a9ea028a52}\label{class_big_int_aa34ecda03510403923d8d3a9ea028a52} 
+\index{BigInt@{BigInt}!pow@{pow}}
+\index{pow@{pow}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{pow()}{pow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_big_int}{Big\+Int}} Big\+Int\+::pow (\begin{DoxyParamCaption}\item[{int}]{exponent }\end{DoxyParamCaption}) const}
+
+
+
+Calculates the \doxylink{class_big_int}{Big\+Int} raised to the power of an integer exponent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exponent} & The exponent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the exponentiation. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_aff71eef13bdf853d18b04d1422e9d754}\label{class_big_int_aff71eef13bdf853d18b04d1422e9d754} 
+\index{BigInt@{BigInt}!toString@{toString}}
+\index{toString@{toString}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Big\+Int\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Converts \doxylink{class_big_int}{Big\+Int} to string. 
+
+\begin{DoxyReturn}{Returns}
+The string representation of \doxylink{class_big_int}{Big\+Int}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_big_int_a20466e28e0aa2656d6aa2a85ee5efc6e}\label{class_big_int_a20466e28e0aa2656d6aa2a85ee5efc6e} 
+\index{BigInt@{BigInt}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the output stream operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The output stream. \\
+\hline
+{\em big\+Int} & The \doxylink{class_big_int}{Big\+Int} object to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the output stream. 
+\end{DoxyReturn}
+\Hypertarget{class_big_int_a9f4a41d25e530468354b3057e97ddb40}\label{class_big_int_a9f4a41d25e530468354b3057e97ddb40} 
+\index{BigInt@{BigInt}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!BigInt@{BigInt}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloads the input stream operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The input stream. \\
+\hline
+{\em b} & The \doxylink{class_big_int}{Big\+Int} object to store the input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the input stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_big_int_8h}{Big\+Int.\+h}}\item 
+\mbox{\hyperlink{_big_int_8cpp}{Big\+Int.\+cpp}}\end{DoxyCompactItemize}

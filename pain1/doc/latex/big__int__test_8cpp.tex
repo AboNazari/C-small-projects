@@ -1,0 +1,220 @@
+\doxysection{big\+\_\+int\+\_\+test.\+cpp File Reference}
+\hypertarget{big__int__test_8cpp}{}\label{big__int__test_8cpp}\index{big\_int\_test.cpp@{big\_int\_test.cpp}}
+{\ttfamily \#include $<$catch2/catch\+\_\+test\+\_\+macros.\+hpp$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include "{}Big\+Int.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{big__int__test_8cpp_a5189e9d01f267e45e0a79c4f1db064c1}{factorial}} (uint32\+\_\+t number)
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_aab83b61870b4c74481e713004e4fe5d3}{TEST\+\_\+\+CASE}} ("{}Factorials are computed"{}, "{}\mbox{[}factorial\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a54bde7d854900b4e074f2a7cbbe5a264}{TEST\+\_\+\+CASE}} ("{}Default Constructor"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a3c8ee4d8f5080e7f331c85fd47ad7183}{TEST\+\_\+\+CASE}} ("{}Integer Constructor"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_ab398ad50e3026e5752527e2f607c4f89}{TEST\+\_\+\+CASE}} ("{}String Constructor"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a28e984395651e8da9dc2a218f26277b8}{TEST\+\_\+\+CASE}} ("{}Copy Constructor and Assignment"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a72175c81f7aa96952aff9fe1fc24c1c6}{TEST\+\_\+\+CASE}} ("{}Move Constructor and Assignment"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_ae3f3a87ecbb11f8acc5510dcc8629c9a}{TEST\+\_\+\+CASE}} ("{}Addition"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a9dcee0528d3eaba1590c77d4493912b1}{TEST\+\_\+\+CASE}} ("{}Subtraction"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a9fa0ec6429b974637a324e74358f9132}{TEST\+\_\+\+CASE}} ("{}Multiplication"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a05b86b123666e3bf381d7879f196b389}{TEST\+\_\+\+CASE}} ("{}Division and Remainder"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a6c64582b9232feafac9bb4561f08a957}{TEST\+\_\+\+CASE}} ("{}Equality and Inequality"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a55e35167b924d258329f2807db6b58c1}{TEST\+\_\+\+CASE}} ("{}Greater Than and Less Than"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a290c5b1fbfd0d98189b36c10fedd668c}{TEST\+\_\+\+CASE}} ("{}Greater Than or Equal and Less Than or Equal"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a23a220aaea1238e1186881121bdc8b12}{TEST\+\_\+\+CASE}} ("{}Unary Minus"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a9b31021de2f7a0ddf422b33fb52e4b83}{TEST\+\_\+\+CASE}} ("{}Increment and Decrement"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a92e18821d8c80080834e45bc4746610a}{TEST\+\_\+\+CASE}} ("{}Input Operator"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a0046f852c2d7747c954783426db2f6f4}{TEST\+\_\+\+CASE}} ("{}Output Operator"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_af1c8a0f7a58cf71470b5b5c770732e78}{TEST\+\_\+\+CASE}} ("{}Zero"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a379f1cb21fffd1ebeef6805faa0f67bb}{TEST\+\_\+\+CASE}} ("{}Addition with Negative Numbers"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_afa47beca245d831982c0e43d24fbada0}{TEST\+\_\+\+CASE}} ("{}Subtraction with Negative Numbers"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_aabde481e11234f6cfff394882df5a6dd}{TEST\+\_\+\+CASE}} ("{}Multiplication with Negative Numbers"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a1abbc57af00c182ce8968b42bb13e5be}{TEST\+\_\+\+CASE}} ("{}Division with Negative Numbers"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a2215002375134a289a5d680e5db579db}{TEST\+\_\+\+CASE}} ("{}Division by Zero"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_a725e7023a9d8ef3b4cf0f90df1ce63de}{TEST\+\_\+\+CASE}} ("{}Large Numbers"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\item 
+\mbox{\hyperlink{big__int__test_8cpp_acff1338b5cbd8f89531aee0d01d044f6}{TEST\+\_\+\+CASE}} ("{}String Conversion"{}, "{}\mbox{[}Big\+Int\mbox{]}"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{big__int__test_8cpp_a5189e9d01f267e45e0a79c4f1db064c1}\label{big__int__test_8cpp_a5189e9d01f267e45e0a79c4f1db064c1} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!factorial@{factorial}}
+\index{factorial@{factorial}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{factorial()}{factorial()}}
+{\footnotesize\ttfamily uint32\+\_\+t factorial (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{number }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a379f1cb21fffd1ebeef6805faa0f67bb}\label{big__int__test_8cpp_a379f1cb21fffd1ebeef6805faa0f67bb} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Addition with Negative Numbers"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_ae3f3a87ecbb11f8acc5510dcc8629c9a}\label{big__int__test_8cpp_ae3f3a87ecbb11f8acc5510dcc8629c9a} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Addition"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a28e984395651e8da9dc2a218f26277b8}\label{big__int__test_8cpp_a28e984395651e8da9dc2a218f26277b8} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Copy Constructor and Assignment"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a54bde7d854900b4e074f2a7cbbe5a264}\label{big__int__test_8cpp_a54bde7d854900b4e074f2a7cbbe5a264} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Default Constructor"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a05b86b123666e3bf381d7879f196b389}\label{big__int__test_8cpp_a05b86b123666e3bf381d7879f196b389} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Division and Remainder"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a2215002375134a289a5d680e5db579db}\label{big__int__test_8cpp_a2215002375134a289a5d680e5db579db} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Division by Zero"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a1abbc57af00c182ce8968b42bb13e5be}\label{big__int__test_8cpp_a1abbc57af00c182ce8968b42bb13e5be} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Division with Negative Numbers"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a6c64582b9232feafac9bb4561f08a957}\label{big__int__test_8cpp_a6c64582b9232feafac9bb4561f08a957} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Equality and Inequality"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_aab83b61870b4c74481e713004e4fe5d3}\label{big__int__test_8cpp_aab83b61870b4c74481e713004e4fe5d3} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [9/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Factorials are computed"{}}]{,  }\item[{"{}"{}}]{\mbox{[}factorial\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a55e35167b924d258329f2807db6b58c1}\label{big__int__test_8cpp_a55e35167b924d258329f2807db6b58c1} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [10/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Greater Than and Less Than"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a290c5b1fbfd0d98189b36c10fedd668c}\label{big__int__test_8cpp_a290c5b1fbfd0d98189b36c10fedd668c} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [11/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Greater Than or Equal and Less Than or Equal"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a9b31021de2f7a0ddf422b33fb52e4b83}\label{big__int__test_8cpp_a9b31021de2f7a0ddf422b33fb52e4b83} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [12/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Increment and Decrement"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a92e18821d8c80080834e45bc4746610a}\label{big__int__test_8cpp_a92e18821d8c80080834e45bc4746610a} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [13/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Input Operator"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a3c8ee4d8f5080e7f331c85fd47ad7183}\label{big__int__test_8cpp_a3c8ee4d8f5080e7f331c85fd47ad7183} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [14/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Integer Constructor"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a725e7023a9d8ef3b4cf0f90df1ce63de}\label{big__int__test_8cpp_a725e7023a9d8ef3b4cf0f90df1ce63de} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [15/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Large Numbers"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a72175c81f7aa96952aff9fe1fc24c1c6}\label{big__int__test_8cpp_a72175c81f7aa96952aff9fe1fc24c1c6} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [16/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Move Constructor and Assignment"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_aabde481e11234f6cfff394882df5a6dd}\label{big__int__test_8cpp_aabde481e11234f6cfff394882df5a6dd} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [17/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Multiplication with Negative Numbers"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a9fa0ec6429b974637a324e74358f9132}\label{big__int__test_8cpp_a9fa0ec6429b974637a324e74358f9132} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [18/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Multiplication"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a0046f852c2d7747c954783426db2f6f4}\label{big__int__test_8cpp_a0046f852c2d7747c954783426db2f6f4} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [19/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Output Operator"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_ab398ad50e3026e5752527e2f607c4f89}\label{big__int__test_8cpp_ab398ad50e3026e5752527e2f607c4f89} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [20/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}String Constructor"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_acff1338b5cbd8f89531aee0d01d044f6}\label{big__int__test_8cpp_acff1338b5cbd8f89531aee0d01d044f6} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [21/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}String Conversion"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_afa47beca245d831982c0e43d24fbada0}\label{big__int__test_8cpp_afa47beca245d831982c0e43d24fbada0} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [22/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Subtraction with Negative Numbers"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a9dcee0528d3eaba1590c77d4493912b1}\label{big__int__test_8cpp_a9dcee0528d3eaba1590c77d4493912b1} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [23/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Subtraction"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_a23a220aaea1238e1186881121bdc8b12}\label{big__int__test_8cpp_a23a220aaea1238e1186881121bdc8b12} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [24/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Unary Minus"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+
+\Hypertarget{big__int__test_8cpp_af1c8a0f7a58cf71470b5b5c770732e78}\label{big__int__test_8cpp_af1c8a0f7a58cf71470b5b5c770732e78} 
+\index{big\_int\_test.cpp@{big\_int\_test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!big\_int\_test.cpp@{big\_int\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [25/25]}}
+{\footnotesize\ttfamily TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Zero"{}}]{,  }\item[{"{}"{}}]{\mbox{[}\+Big\+Int\mbox{]} }\end{DoxyParamCaption})}
+

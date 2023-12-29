@@ -1,0 +1,56 @@
+\doxysection{Big\+Int.\+cpp File Reference}
+\hypertarget{_big_int_8cpp}{}\label{_big_int_8cpp}\index{BigInt.cpp@{BigInt.cpp}}
+{\ttfamily \#include "{}Big\+Int.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_big_int_8cpp_aa2122c40323c53425cfec03e52fca8af}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&big\+Int)
+\begin{DoxyCompactList}\small\item\em Overloads the output stream operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{_big_int_8cpp_a9f4a41d25e530468354b3057e97ddb40}{operator$>$$>$}} (std\+::istream \&in, \mbox{\hyperlink{class_big_int}{Big\+Int}} \&b)
+\begin{DoxyCompactList}\small\item\em Overloads the input stream operator for \doxylink{class_big_int}{Big\+Int}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_big_int_8cpp_aa2122c40323c53425cfec03e52fca8af}\label{_big_int_8cpp_aa2122c40323c53425cfec03e52fca8af} 
+\index{BigInt.cpp@{BigInt.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BigInt.cpp@{BigInt.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{big\+Int }\end{DoxyParamCaption})}
+
+
+
+Overloads the output stream operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The output stream. \\
+\hline
+{\em big\+Int} & The \doxylink{class_big_int}{Big\+Int} object to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the output stream. 
+\end{DoxyReturn}
+\Hypertarget{_big_int_8cpp_a9f4a41d25e530468354b3057e97ddb40}\label{_big_int_8cpp_a9f4a41d25e530468354b3057e97ddb40} 
+\index{BigInt.cpp@{BigInt.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!BigInt.cpp@{BigInt.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{\mbox{\hyperlink{class_big_int}{Big\+Int}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Overloads the input stream operator for \doxylink{class_big_int}{Big\+Int}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The input stream. \\
+\hline
+{\em b} & The \doxylink{class_big_int}{Big\+Int} object to store the input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the input stream. 
+\end{DoxyReturn}
